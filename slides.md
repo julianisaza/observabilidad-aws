@@ -12,7 +12,18 @@ drawings:
 transition: slide-left
 title: Observabilidad en AWS
 mdc: true
+hideInToc: true
 ---
+
+<style>
+.slidev-layout {
+  overflow-y: auto;
+  padding-bottom: 3rem;
+}
+.slidev-nav {
+  z-index: 10;
+}
+</style>
 
 # Observabilidad en AWS
 
@@ -494,7 +505,7 @@ background: '#0f172a'
       <p class="text-slate-300 text-xs mt-1">Lambda / ECS / EC2</p>
     </div>
 
-    <div class="text-slate-600 text-lg">→</div>
+    <div class="text-slate-300 text-lg">→</div>
 
     <div class="space-y-2">
       <div class="bg-emerald-950 rounded-lg p-2 border border-emerald-800">
@@ -507,7 +518,7 @@ background: '#0f172a'
       </div>
     </div>
 
-    <div class="text-slate-600 text-lg">→</div>
+    <div class="text-slate-300 text-lg">→</div>
 
     <div class="space-y-2">
       <div class="bg-blue-950 rounded-lg p-2 border border-blue-800">
