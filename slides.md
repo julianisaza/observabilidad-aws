@@ -218,7 +218,7 @@ background: '#0f172a'
 
 # Pilar 1 — Métricas 📊
 
-<div class="grid grid-cols-2 gap-6 mt-6">
+<div class="grid grid-cols-2 gap-6 mt-6 pb-12">
 
 <div>
   <p class="text-slate-400 text-sm leading-relaxed mb-4">Valores numéricos capturados a intervalos regulares. Ideales para alertas, dashboards y autoscaling. Bajo costo, poca profundidad de contexto.</p>
@@ -277,7 +277,7 @@ background: '#0f172a'
 
 # Pilar 2 — Logs 📝
 
-<div class="grid grid-cols-2 gap-6 mt-6">
+<div class="grid grid-cols-2 gap-6 mt-6 pb-12">
 
 <div>
   <p class="text-slate-400 text-sm leading-relaxed mb-4">Registros detallados de eventos discretos. La diferencia entre logs <strong class="text-white">no estructurados</strong> y <strong class="text-white">estructurados (JSON)</strong> es crítica para poder consultarlos.</p>
@@ -328,7 +328,7 @@ background: '#0f172a'
 
 # Pilar 3 — Trazas 🔍
 
-<div class="grid grid-cols-2 gap-6 mt-6">
+<div class="grid grid-cols-2 gap-6 mt-6 pb-12">
 
 <div>
   <p class="text-slate-400 text-sm leading-relaxed mb-4">Siguen un request único a través de todos los servicios. Cada salto es un <strong class="text-white">span</strong>. Fundamentales en arquitecturas con múltiples Lambdas o contenedores.</p>
@@ -380,7 +380,7 @@ background: '#0f172a'
 
 # El flujo completo de debugging
 
-<div class="mt-4 space-y-3">
+<div class="mt-4 space-y-3 pb-12">
 
 <div class="flex items-center gap-4 bg-slate-800 rounded-xl p-4 border border-slate-600">
   <div class="w-8 h-8 rounded-full bg-red-900 border border-red-600 flex items-center justify-center text-red-400 font-bold text-sm flex-shrink-0">1</div>
@@ -486,12 +486,12 @@ background: '#0f172a'
 # Arquitectura de observabilidad en AWS
 
 <div class="mt-4 bg-slate-800 rounded-xl p-5 border border-slate-600">
-  <div class="grid grid-cols-5 gap-2 items-center text-center text-xs">
+  <div class="grid grid-cols-5 gap-2 items-center text-center text-xs text-slate-200">
 
     <div class="bg-slate-900 rounded-lg p-3 border border-slate-700">
       <div class="text-2xl mb-2">🌐</div>
-      <p class="text-slate-300 font-medium">Tu app</p>
-      <p class="text-slate-500 text-xs mt-1">Lambda / ECS / EC2</p>
+      <p class="text-white font-medium">Tu app</p>
+      <p class="text-slate-300 text-xs mt-1">Lambda / ECS / EC2</p>
     </div>
 
     <div class="text-slate-600 text-lg">→</div>
@@ -499,11 +499,11 @@ background: '#0f172a'
     <div class="space-y-2">
       <div class="bg-emerald-950 rounded-lg p-2 border border-emerald-800">
         <p class="text-emerald-400 font-medium">CloudWatch</p>
-        <p class="text-slate-500 text-xs">Metrics + Logs</p>
+        <p class="text-slate-300 text-xs">Metrics + Logs</p>
       </div>
       <div class="bg-orange-950 rounded-lg p-2 border border-orange-800">
         <p class="text-orange-400 font-medium">AWS X-Ray</p>
-        <p class="text-slate-500 text-xs">Trazas</p>
+        <p class="text-slate-300 text-xs">Trazas</p>
       </div>
     </div>
 
@@ -512,21 +512,21 @@ background: '#0f172a'
     <div class="space-y-2">
       <div class="bg-blue-950 rounded-lg p-2 border border-blue-800">
         <p class="text-blue-400 font-medium">Dashboards</p>
-        <p class="text-slate-500 text-xs">CloudWatch / Grafana</p>
+        <p class="text-slate-300 text-xs">CloudWatch / Grafana</p>
       </div>
       <div class="bg-red-950 rounded-lg p-2 border border-red-800">
         <p class="text-red-400 font-medium">Alertas</p>
-        <p class="text-slate-500 text-xs">SNS / Slack / PagerDuty</p>
+        <p class="text-slate-300 text-xs">SNS / Slack / PagerDuty</p>
       </div>
     </div>
 
   </div>
 </div>
 
-<div class="grid grid-cols-3 gap-4 mt-5">
+<div class="grid grid-cols-3 gap-4 mt-5 pb-12">
   <div class="bg-slate-800 rounded-lg p-4 border border-emerald-800">
     <p class="text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-2">Métricas</p>
-    <ul class="text-slate-400 text-xs space-y-1">
+    <ul class="text-slate-300 text-xs space-y-1">
       <li>→ CloudWatch Metrics</li>
       <li>→ CloudWatch Alarms</li>
       <li>→ Container Insights</li>
@@ -535,7 +535,7 @@ background: '#0f172a'
   </div>
   <div class="bg-slate-800 rounded-lg p-4 border border-purple-800">
     <p class="text-purple-400 text-xs font-semibold uppercase tracking-wider mb-2">Logs</p>
-    <ul class="text-slate-400 text-xs space-y-1">
+    <ul class="text-slate-300 text-xs space-y-1">
       <li>→ CloudWatch Logs</li>
       <li>→ CloudWatch Log Insights</li>
       <li>→ CloudTrail</li>
@@ -544,7 +544,7 @@ background: '#0f172a'
   </div>
   <div class="bg-slate-800 rounded-lg p-4 border border-orange-800">
     <p class="text-orange-400 text-xs font-semibold uppercase tracking-wider mb-2">Trazas</p>
-    <ul class="text-slate-400 text-xs space-y-1">
+    <ul class="text-slate-300 text-xs space-y-1">
       <li>→ AWS X-Ray</li>
       <li>→ CloudWatch ServiceLens</li>
       <li>→ Distro for OpenTelemetry</li>
@@ -560,7 +560,7 @@ background: '#0f172a'
 
 # CloudWatch Logs — configuración en Lambda
 
-<div class="grid grid-cols-2 gap-6 mt-4">
+<div class="grid grid-cols-2 gap-6 mt-4 pb-12">
 
 <div>
   <p class="text-slate-400 text-sm leading-relaxed mb-3">Lambda envía logs automáticamente a CloudWatch. Lo importante es estructurarlos en JSON desde el código para poder consultarlos con Log Insights.</p>
@@ -620,7 +620,7 @@ background: '#0f172a'
 
 # CloudWatch Alarms — configuración práctica
 
-<div class="grid grid-cols-2 gap-6 mt-4">
+<div class="grid grid-cols-2 gap-6 mt-4 pb-12">
 
 <div>
   <p class="text-slate-400 text-sm leading-relaxed mb-3">Una alarma observa una métrica y dispara una acción cuando cruza un umbral. Se conecta con SNS para notificar por email, Slack o PagerDuty.</p>
@@ -690,7 +690,7 @@ background: '#0f172a'
 
 # AWS X-Ray — instrumentación en Lambda
 
-<div class="grid grid-cols-2 gap-6 mt-4">
+<div class="grid grid-cols-2 gap-6 mt-4 pb-12">
 
 <div>
   <p class="text-slate-400 text-sm leading-relaxed mb-3">X-Ray necesita dos cosas: activar el tracing en la función Lambda y envolver el SDK de AWS con el cliente de X-Ray para capturar los subsegmentos automáticamente.</p>
@@ -758,7 +758,7 @@ background: '#0f172a'
 
 # CloudWatch ServiceLens — visión unificada
 
-<div class="grid grid-cols-2 gap-6 mt-4">
+<div class="grid grid-cols-2 gap-6 mt-4 pb-12">
 
 <div>
   <p class="text-slate-400 text-sm leading-relaxed mb-4">ServiceLens combina métricas, logs y trazas de X-Ray en una sola vista. Es el punto de entrada para debugging en producción — ves el Service Map y llegas al trace en 2 clics.</p>
@@ -845,7 +845,8 @@ background: '#0f172a'
 
 # El escenario — incidente en producción
 
-<div class="mt-4 bg-red-950 rounded-xl p-5 border border-red-700">
+<div class="mt-4 pb-12">
+<div class="bg-red-950 rounded-xl p-5 border border-red-700">
   <div class="flex items-center gap-3 mb-4">
     <span class="text-3xl">🚨</span>
     <div>
@@ -896,6 +897,7 @@ background: '#0f172a'
 </div>
 
 <div class="mt-4 text-center text-slate-500 text-sm">¿Por dónde empezamos?</div>
+</div>
 
 ---
 layout: default
@@ -904,7 +906,7 @@ background: '#0f172a'
 
 # Paso 1 — Métricas: confirmar el alcance
 
-<div class="grid grid-cols-2 gap-6 mt-4">
+<div class="grid grid-cols-2 gap-6 mt-4 pb-12">
 
 <div>
   <p class="text-slate-400 text-sm leading-relaxed mb-4">Antes de bucear en logs, usamos métricas para entender el tamaño del problema y correlacionar con eventos del sistema.</p>
@@ -973,7 +975,7 @@ background: '#0f172a'
 
 # Paso 2 — Logs: encontrar el error exacto
 
-<div class="grid grid-cols-2 gap-6 mt-4">
+<div class="grid grid-cols-2 gap-6 mt-4 pb-12">
 
 <div>
   <p class="text-slate-400 text-sm leading-relaxed mb-3">Con Log Insights podemos consultar todos los logs de la función en segundos, sin descargar nada ni hacer SSH a ningún servidor.</p>
@@ -1034,42 +1036,42 @@ background: '#0f172a'
 
 # Paso 3 — Trazas: localizar la causa raíz
 
-<div class="grid grid-cols-2 gap-6 mt-4">
+<div class="grid grid-cols-2 gap-6 mt-4 pb-12">
 
 <div>
-  <p class="text-slate-400 text-sm leading-relaxed mb-3">Con el <code class="text-orange-400">trace_id</code> del log vamos directo a X-Ray y vemos el waterfall completo del request.</p>
+  <p class="text-slate-300 text-sm leading-relaxed mb-3">Con el <code class="text-orange-400">trace_id</code> del log vamos directo a X-Ray y vemos el waterfall completo del request.</p>
 
-  <div class="text-slate-500 text-xs font-medium uppercase tracking-wider mb-2">📍 X-Ray → Trace detail: 1-abc123-xyz</div>
+  <div class="text-slate-300 text-xs font-medium uppercase tracking-wider mb-2">📍 X-Ray → Trace detail: 1-abc123-xyz</div>
   <div class="bg-slate-900 rounded-xl p-4 font-mono text-xs border border-orange-900 leading-relaxed">
-    <span class="text-slate-500">Total: 4.3s · Status: 500</span><br><br>
+    <span class="text-slate-300">Total: 4.3s · Status: 500</span><br><br>
     <span class="text-emerald-400">▶ API Gateway</span>
-    <span class="text-slate-600 ml-2">━━ 12ms ✓</span><br>
+    <span class="text-slate-300 ml-2">━━ 12ms ✓</span><br>
     &nbsp;&nbsp;<span class="text-blue-400">▶ Lambda: init</span>
     <span class="text-amber-400 ml-2">━━━━━━━━ 878ms ⚠</span><br>
     &nbsp;&nbsp;<span class="text-blue-400">▶ Lambda: handler</span>
-    <span class="text-slate-400 ml-2">━━ 3410ms</span><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-400">▶ validar-stock</span>
+    <span class="text-slate-300 ml-2">━━ 3410ms</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-300">▶ validar-stock</span>
     <span class="text-emerald-400 ml-2">━ 45ms ✓</span><br>
     &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">▶ DynamoDB: BatchWrite</span>
     <span class="text-red-400 ml-2">━━━━━━━━ 3340ms ❌</span><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-500">Table: orders-table</span><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-500">Items: 150 · Retries: 8</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-300">Table: orders-table</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-300">Items: 150 · Retries: 8</span><br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">ProvisionedThroughputExceeded</span>
   </div>
 
   <div class="mt-3 bg-red-950 rounded-lg p-3 border border-red-800">
     <p class="text-red-300 text-xs font-semibold">🎯 Causa raíz encontrada</p>
-    <p class="text-slate-400 text-xs mt-1">El nuevo endpoint <code>/api/orders/bulk</code> hace un <code>BatchWrite</code> de 150 items de una vez. La tabla DynamoDB no tiene capacidad provisionada para esa operación.</p>
+    <p class="text-slate-300 text-xs mt-1">El nuevo endpoint <code>/api/orders/bulk</code> hace un <code>BatchWrite</code> de 150 items de una vez. La tabla DynamoDB no tiene capacidad provisionada para esa operación.</p>
   </div>
 </div>
 
 <div>
-  <div class="text-slate-500 text-xs font-medium uppercase tracking-wider mb-2">Análisis del problema</div>
+  <div class="text-slate-300 text-xs font-medium uppercase tracking-wider mb-2">Análisis del problema</div>
 
   <div class="space-y-3">
     <div class="bg-slate-800 rounded-lg p-4 border border-slate-700">
       <p class="text-white text-xs font-medium mb-2">¿Qué cambió en el deploy?</p>
-      <p class="text-slate-400 text-xs leading-relaxed">El nuevo endpoint hace <code class="text-red-400">BatchWriteItem</code> con hasta 150 registros por request. DynamoDB tiene límite de 25 items por batch y capacidad de escritura insuficiente.</p>
+      <p class="text-slate-300 text-xs leading-relaxed">El nuevo endpoint hace <code class="text-red-400">BatchWriteItem</code> con hasta 150 registros por request. DynamoDB tiene límite de 25 items por batch y capacidad de escritura insuficiente.</p>
     </div>
 
     <div class="bg-slate-800 rounded-lg p-4 border border-slate-700">
@@ -1077,26 +1079,26 @@ background: '#0f172a'
       <div class="space-y-1">
         <div class="flex items-center gap-2">
           <span class="text-emerald-400 text-xs">→</span>
-          <p class="text-slate-400 text-xs">Rollback inmediato del deploy (acción rápida)</p>
+          <p class="text-slate-300 text-xs">Rollback inmediato del deploy (acción rápida)</p>
         </div>
         <div class="flex items-center gap-2">
           <span class="text-emerald-400 text-xs">→</span>
-          <p class="text-slate-400 text-xs">Aumentar capacidad de escritura en DynamoDB</p>
+          <p class="text-slate-300 text-xs">Aumentar capacidad de escritura en DynamoDB</p>
         </div>
         <div class="flex items-center gap-2">
           <span class="text-emerald-400 text-xs">→</span>
-          <p class="text-slate-400 text-xs">Dividir el batch en chunks de 25 con retry exponencial</p>
+          <p class="text-slate-300 text-xs">Dividir el batch en chunks de 25 con retry exponencial</p>
         </div>
         <div class="flex items-center gap-2">
           <span class="text-emerald-400 text-xs">→</span>
-          <p class="text-slate-400 text-xs">Cambiar a DynamoDB On-Demand para este patrón</p>
+          <p class="text-slate-300 text-xs">Cambiar a DynamoDB On-Demand para este patrón</p>
         </div>
       </div>
     </div>
 
     <div class="bg-emerald-950 rounded-lg p-3 border border-emerald-700">
       <p class="text-emerald-300 text-xs font-semibold">⏱ Tiempo total de debugging: ~8 minutos</p>
-      <p class="text-slate-400 text-xs mt-1">Sin observabilidad, esto tomaría horas de logs manuales y suposiciones. Con los 3 pilares, llegamos a la causa raíz en minutos.</p>
+      <p class="text-slate-300 text-xs mt-1">Sin observabilidad, esto tomaría horas de logs manuales y suposiciones. Con los 3 pilares, llegamos a la causa raíz en minutos.</p>
     </div>
   </div>
 </div>
@@ -1110,7 +1112,7 @@ background: '#0f172a'
 
 # Lecciones del incidente
 
-<div class="grid grid-cols-2 gap-6 mt-6">
+<div class="grid grid-cols-2 gap-6 mt-6 pb-12">
 
 <div class="space-y-3">
   <div class="bg-slate-800 rounded-xl p-5 border border-emerald-700">
