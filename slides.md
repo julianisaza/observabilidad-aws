@@ -1,6 +1,6 @@
 ---
 theme: default
-background: '#0f172a'
+background: '#1e293b'
 class: text-center
 highlighter: shiki
 lineNumbers: true
@@ -18,24 +18,24 @@ hideInToc: true
 <style>
 .slidev-layout {
   overflow-y: auto;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
-.slidev-nav {
-  z-index: 10;
+#slidev-goto-dialog {
+  display: none !important;
 }
 </style>
 
-# Observabilidad en AWS
+# <span class="text-white">Observabilidad en AWS</span>
 
-**Logs · Métricas · Trazas**
+<span class="text-white text-2xl">**Logs · Métricas · Trazas**</span>
 
-<p class="text-slate-400 mt-4 text-lg">Una guía práctica para entender el monitoreo moderno<br>en sistemas distribuidos</p>
+<p class="text-slate-300 mt-4 text-lg">Una guía práctica para entender el monitoreo moderno<br>en sistemas distribuidos</p>
 
-<div class="mt-12 text-slate-500 text-sm">DevOps Journey · Bloque 1 & 2</div>
+<div class="mt-12 text-slate-300 text-sm">Julian Isaza</div>
 
 ---
 layout: center
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # 🤔 Pregunta de apertura
@@ -50,7 +50,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # La evolución del problema
@@ -86,7 +86,7 @@ background: '#0f172a'
 
 ---
 layout: center
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # ¿Qué es Observabilidad?
@@ -110,7 +110,7 @@ background: '#0f172a'
 
 ---
 layout: two-cols
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Monitoring
@@ -151,7 +151,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Monitoring vs Observabilidad — ejemplo real
@@ -183,7 +183,7 @@ background: '#0f172a'
 
 ---
 layout: center
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Los 3 Pilares de Observabilidad
@@ -224,7 +224,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Pilar 1 — Métricas 📊
@@ -283,7 +283,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Pilar 2 — Logs 📝
@@ -334,7 +334,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Pilar 3 — Trazas 🔍
@@ -386,7 +386,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # El flujo completo de debugging
@@ -437,7 +437,7 @@ background: '#0f172a'
 
 ---
 layout: center
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Resumen — Los 3 Pilares
@@ -481,7 +481,7 @@ background: '#0f172a'
 </div>
 ---
 layout: center
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Bloque 3 — AWS en práctica
@@ -491,47 +491,45 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Arquitectura de observabilidad en AWS
 
-<div class="mt-4 bg-slate-800 rounded-xl p-5 border border-slate-600">
-  <div class="grid grid-cols-5 gap-2 items-center text-center text-xs text-slate-200">
+<div class="mt-4 flex items-center justify-center gap-4">
 
-    <div class="bg-slate-900 rounded-lg p-3 border border-slate-700">
-      <div class="text-2xl mb-2">🌐</div>
-      <p class="text-white font-medium">Tu app</p>
-      <p class="text-slate-300 text-xs mt-1">Lambda / ECS / EC2</p>
-    </div>
-
-    <div class="text-slate-300 text-lg">→</div>
-
-    <div class="space-y-2">
-      <div class="bg-emerald-950 rounded-lg p-2 border border-emerald-800">
-        <p class="text-emerald-400 font-medium">CloudWatch</p>
-        <p class="text-slate-300 text-xs">Metrics + Logs</p>
-      </div>
-      <div class="bg-orange-950 rounded-lg p-2 border border-orange-800">
-        <p class="text-orange-400 font-medium">AWS X-Ray</p>
-        <p class="text-slate-300 text-xs">Trazas</p>
-      </div>
-    </div>
-
-    <div class="text-slate-300 text-lg">→</div>
-
-    <div class="space-y-2">
-      <div class="bg-blue-950 rounded-lg p-2 border border-blue-800">
-        <p class="text-blue-400 font-medium">Dashboards</p>
-        <p class="text-slate-300 text-xs">CloudWatch / Grafana</p>
-      </div>
-      <div class="bg-red-950 rounded-lg p-2 border border-red-800">
-        <p class="text-red-400 font-medium">Alertas</p>
-        <p class="text-slate-300 text-xs">SNS / Slack / PagerDuty</p>
-      </div>
-    </div>
-
+  <div class="bg-slate-800 rounded-xl p-4 border border-slate-600 text-center w-36">
+    <div class="text-3xl mb-2">🌐</div>
+    <p class="text-white font-semibold text-sm">Tu app</p>
+    <p class="text-slate-300 text-xs mt-1">Lambda / ECS / EC2</p>
   </div>
+
+  <div class="text-white text-2xl font-bold">→</div>
+
+  <div class="space-y-3">
+    <div class="bg-emerald-950 rounded-xl p-3 border border-emerald-700 text-center w-44">
+      <p class="text-emerald-400 font-semibold text-sm">CloudWatch</p>
+      <p class="text-slate-300 text-xs mt-1">Metrics + Logs</p>
+    </div>
+    <div class="bg-orange-950 rounded-xl p-3 border border-orange-700 text-center w-44">
+      <p class="text-orange-400 font-semibold text-sm">AWS X-Ray</p>
+      <p class="text-slate-300 text-xs mt-1">Trazas</p>
+    </div>
+  </div>
+
+  <div class="text-white text-2xl font-bold">→</div>
+
+  <div class="space-y-3">
+    <div class="bg-blue-950 rounded-xl p-3 border border-blue-700 text-center w-44">
+      <p class="text-blue-400 font-semibold text-sm">Dashboards</p>
+      <p class="text-slate-300 text-xs mt-1">CloudWatch / Grafana</p>
+    </div>
+    <div class="bg-red-950 rounded-xl p-3 border border-red-700 text-center w-44">
+      <p class="text-red-400 font-semibold text-sm">Alertas</p>
+      <p class="text-slate-300 text-xs mt-1">SNS / Slack / PagerDuty</p>
+    </div>
+  </div>
+
 </div>
 
 <div class="grid grid-cols-3 gap-4 mt-5 pb-12">
@@ -566,7 +564,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # CloudWatch Logs — configuración en Lambda
@@ -626,7 +624,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # CloudWatch Alarms — configuración práctica
@@ -696,7 +694,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # AWS X-Ray — instrumentación en Lambda
@@ -764,7 +762,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # CloudWatch ServiceLens — visión unificada
@@ -841,7 +839,7 @@ background: '#0f172a'
 
 ---
 layout: center
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Bloque 4 — Demo de debugging
@@ -851,7 +849,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # El escenario — incidente en producción
@@ -912,7 +910,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Paso 1 — Métricas: confirmar el alcance
@@ -981,7 +979,7 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Paso 2 — Logs: encontrar el error exacto
@@ -1042,83 +1040,75 @@ background: '#0f172a'
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Paso 3 — Trazas: localizar la causa raíz
 
 <div class="grid grid-cols-2 gap-6 mt-4 pb-12">
-
 <div>
-  <p class="text-slate-300 text-sm leading-relaxed mb-3">Con el <code class="text-orange-400">trace_id</code> del log vamos directo a X-Ray y vemos el waterfall completo del request.</p>
-
-  <div class="text-slate-300 text-xs font-medium uppercase tracking-wider mb-2">📍 X-Ray → Trace detail: 1-abc123-xyz</div>
-  <div class="bg-slate-900 rounded-xl p-4 font-mono text-xs border border-orange-900 leading-relaxed">
-    <span class="text-slate-300">Total: 4.3s · Status: 500</span><br><br>
-    <span class="text-emerald-400">▶ API Gateway</span>
-    <span class="text-slate-300 ml-2">━━ 12ms ✓</span><br>
-    &nbsp;&nbsp;<span class="text-blue-400">▶ Lambda: init</span>
-    <span class="text-amber-400 ml-2">━━━━━━━━ 878ms ⚠</span><br>
-    &nbsp;&nbsp;<span class="text-blue-400">▶ Lambda: handler</span>
-    <span class="text-slate-300 ml-2">━━ 3410ms</span><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-300">▶ validar-stock</span>
-    <span class="text-emerald-400 ml-2">━ 45ms ✓</span><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">▶ DynamoDB: BatchWrite</span>
-    <span class="text-red-400 ml-2">━━━━━━━━ 3340ms ❌</span><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-300">Table: orders-table</span><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-300">Items: 150 · Retries: 8</span><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">ProvisionedThroughputExceeded</span>
-  </div>
-
-  <div class="mt-3 bg-red-950 rounded-lg p-3 border border-red-800">
-    <p class="text-red-300 text-xs font-semibold">🎯 Causa raíz encontrada</p>
-    <p class="text-slate-300 text-xs mt-1">El nuevo endpoint <code>/api/orders/bulk</code> hace un <code>BatchWrite</code> de 150 items de una vez. La tabla DynamoDB no tiene capacidad provisionada para esa operación.</p>
-  </div>
+<p class="text-slate-300 text-sm leading-relaxed mb-3">Con el <code class="text-orange-400">trace_id</code> del log vamos directo a X-Ray y vemos el waterfall completo del request.</p>
+<div class="text-slate-300 text-xs font-medium uppercase tracking-wider mb-2">📍 X-Ray → Trace detail: 1-abc123-xyz</div>
+<div class="bg-slate-900 rounded-xl p-4 font-mono text-xs border border-orange-900 leading-relaxed">
+<span class="text-slate-300">Total: 4.3s · Status: 500</span><br><br>
+<span class="text-emerald-400">▶ API Gateway</span>
+<span class="text-slate-300 ml-2">━━ 12ms ✓</span><br>
+&nbsp;&nbsp;<span class="text-blue-400">▶ Lambda: init</span>
+<span class="text-amber-400 ml-2">━━━━━━━━ 878ms ⚠</span><br>
+&nbsp;&nbsp;<span class="text-blue-400">▶ Lambda: handler</span>
+<span class="text-slate-300 ml-2">━━ 3410ms</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-300">▶ validar-stock</span>
+<span class="text-emerald-400 ml-2">━ 45ms ✓</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">▶ DynamoDB: BatchWrite</span>
+<span class="text-red-400 ml-2">━━━━━━━━ 3340ms ❌</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-300">Table: orders-table</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-slate-300">Items: 150 · Retries: 8</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">ProvisionedThroughputExceeded</span>
 </div>
-
+<div class="mt-3 bg-red-950 rounded-lg p-3 border border-red-800">
+<p class="text-red-300 text-xs font-semibold">🎯 Causa raíz encontrada</p>
+<p class="text-slate-300 text-xs mt-1">El nuevo endpoint <code>/api/orders/bulk</code> hace un <code>BatchWrite</code> de 150 items de una vez. La tabla DynamoDB no tiene capacidad provisionada para esa operación.</p>
+</div>
+</div>
 <div>
-  <div class="text-slate-300 text-xs font-medium uppercase tracking-wider mb-2">Análisis del problema</div>
-
-  <div class="space-y-3">
-    <div class="bg-slate-800 rounded-lg p-4 border border-slate-700">
-      <p class="text-white text-xs font-medium mb-2">¿Qué cambió en el deploy?</p>
-      <p class="text-slate-300 text-xs leading-relaxed">El nuevo endpoint hace <code class="text-red-400">BatchWriteItem</code> con hasta 150 registros por request. DynamoDB tiene límite de 25 items por batch y capacidad de escritura insuficiente.</p>
-    </div>
-
-    <div class="bg-slate-800 rounded-lg p-4 border border-slate-700">
-      <p class="text-white text-xs font-medium mb-2">Opciones de solución</p>
-      <div class="space-y-1">
-        <div class="flex items-center gap-2">
-          <span class="text-emerald-400 text-xs">→</span>
-          <p class="text-slate-300 text-xs">Rollback inmediato del deploy (acción rápida)</p>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-emerald-400 text-xs">→</span>
-          <p class="text-slate-300 text-xs">Aumentar capacidad de escritura en DynamoDB</p>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-emerald-400 text-xs">→</span>
-          <p class="text-slate-300 text-xs">Dividir el batch en chunks de 25 con retry exponencial</p>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-emerald-400 text-xs">→</span>
-          <p class="text-slate-300 text-xs">Cambiar a DynamoDB On-Demand para este patrón</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-emerald-950 rounded-lg p-3 border border-emerald-700">
-      <p class="text-emerald-300 text-xs font-semibold">⏱ Tiempo total de debugging: ~8 minutos</p>
-      <p class="text-slate-300 text-xs mt-1">Sin observabilidad, esto tomaría horas de logs manuales y suposiciones. Con los 3 pilares, llegamos a la causa raíz en minutos.</p>
-    </div>
-  </div>
+<div class="text-slate-300 text-xs font-medium uppercase tracking-wider mb-2">Análisis del problema</div>
+<div class="space-y-3">
+<div class="bg-slate-800 rounded-lg p-4 border border-slate-700">
+<p class="text-white text-xs font-medium mb-2">¿Qué cambió en el deploy?</p>
+<p class="text-slate-300 text-xs leading-relaxed">El nuevo endpoint hace <code class="text-red-400">BatchWriteItem</code> con hasta 150 registros por request. DynamoDB tiene límite de 25 items por batch y capacidad de escritura insuficiente.</p>
 </div>
-
+<div class="bg-slate-800 rounded-lg p-4 border border-slate-700">
+<p class="text-white text-xs font-medium mb-2">Opciones de solución</p>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="text-emerald-400 text-xs">→</span>
+<p class="text-slate-300 text-xs">Rollback inmediato del deploy (acción rápida)</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-emerald-400 text-xs">→</span>
+<p class="text-slate-300 text-xs">Aumentar capacidad de escritura en DynamoDB</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-emerald-400 text-xs">→</span>
+<p class="text-slate-300 text-xs">Dividir el batch en chunks de 25 con retry exponencial</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-emerald-400 text-xs">→</span>
+<p class="text-slate-300 text-xs">Cambiar a DynamoDB On-Demand para este patrón</p>
+</div>
+</div>
+</div>
+<div class="bg-emerald-950 rounded-lg p-3 border border-emerald-700">
+<p class="text-emerald-300 text-xs font-semibold">⏱ Tiempo total de debugging: ~8 minutos</p>
+<p class="text-slate-300 text-xs mt-1">Sin observabilidad, esto tomaría horas de logs manuales y suposiciones. Con los 3 pilares, llegamos a la causa raíz en minutos.</p>
+</div>
+</div>
+</div>
 </div>
 
 ---
 layout: default
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Lecciones del incidente
@@ -1183,7 +1173,7 @@ background: '#0f172a'
 
 ---
 layout: center
-background: '#0f172a'
+background: '#1e293b'
 ---
 
 # Resumen final
@@ -1227,4 +1217,347 @@ background: '#0f172a'
   </div>
 </div>
 
-<div class="mt-6 text-slate-500 text-sm">DevOps Journey · Observabilidad en AWS</div>
+<div class="mt-6 text-slate-500 text-sm">Julian Isaza · Observabilidad en AWS</div>
+
+---
+layout: center
+background: '#1e293b'
+---
+
+# Bloque 5 — OpenTelemetry & ADOT
+
+<div class="mt-6 text-slate-300 text-lg">El estándar abierto para observabilidad moderna</div>
+<div class="mt-2 text-slate-500 text-sm">De vendor lock-in a estándares abiertos</div>
+
+---
+layout: default
+background: '#1e293b'
+---
+
+# ¿Por qué OpenTelemetry?
+
+<div class="grid grid-cols-2 gap-6 mt-6 pb-12">
+<div>
+<div class="bg-red-950 rounded-xl p-5 border border-red-700 mb-4">
+<p class="text-red-400 text-xs font-semibold uppercase mb-2">❌ Problema: Vendor Lock-in</p>
+<div class="space-y-2 text-slate-300 text-xs">
+<p>→ X-Ray SDK solo funciona con AWS</p>
+<p>→ Datadog Agent solo con Datadog</p>
+<p>→ Cambiar de proveedor = reescribir código</p>
+<p>→ Cada herramienta tiene su formato propietario</p>
+</div>
+</div>
+<div class="bg-emerald-950 rounded-xl p-5 border border-emerald-700">
+<p class="text-emerald-400 text-xs font-semibold uppercase mb-2">✅ Solución: OpenTelemetry (OTel)</p>
+<div class="space-y-2 text-slate-300 text-xs">
+<p>→ Estándar abierto (CNCF) — vendor neutral</p>
+<p>→ Un SDK, múltiples destinos</p>
+<p>→ Auto-instrumentación sin cambiar código</p>
+<p>→ Exporta a X-Ray + CloudWatch + Grafana + Dynatrace simultáneamente</p>
+</div>
+</div>
+</div>
+<div>
+<div class="bg-slate-800 rounded-xl p-5 border border-slate-600">
+<p class="text-white font-semibold mb-3">ADOT = AWS Distro for OpenTelemetry</p>
+<p class="text-slate-300 text-sm mb-4">Distribución de OpenTelemetry soportada por AWS, lista para producción.</p>
+<div class="space-y-2">
+<div class="bg-slate-900 rounded-lg p-3 border border-slate-700">
+<p class="text-emerald-400 text-xs font-medium">ADOT Collector</p>
+<p class="text-slate-400 text-xs">Recibe, procesa y exporta telemetría</p>
+</div>
+<div class="bg-slate-900 rounded-lg p-3 border border-slate-700">
+<p class="text-emerald-400 text-xs font-medium">ADOT Java Agent</p>
+<p class="text-slate-400 text-xs">Instrumentación automática — 0 cambios en código</p>
+</div>
+<div class="bg-slate-900 rounded-lg p-3 border border-slate-700">
+<p class="text-emerald-400 text-xs font-medium">EKS Add-on</p>
+<p class="text-slate-400 text-xs">Gestionado por AWS, actualización automática</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+---
+layout: default
+background: '#1e293b'
+---
+
+# ADOT Collector — Pipeline de telemetría
+
+<div class="mt-4 flex items-center justify-center gap-3 pb-12">
+<div class="bg-blue-950 rounded-xl p-4 border border-blue-700 text-center w-40">
+<p class="text-blue-400 font-semibold text-sm">Receivers</p>
+<p class="text-slate-300 text-xs mt-2">OTLP gRPC :4317</p>
+<p class="text-slate-300 text-xs">OTLP HTTP :4318</p>
+<p class="text-slate-300 text-xs">Prometheus</p>
+</div>
+<div class="text-white text-xl font-bold">→</div>
+<div class="bg-amber-950 rounded-xl p-4 border border-amber-700 text-center w-44">
+<p class="text-amber-400 font-semibold text-sm">Processors</p>
+<p class="text-slate-300 text-xs mt-2">memory_limiter</p>
+<p class="text-slate-300 text-xs">k8sattributes</p>
+<p class="text-slate-300 text-xs">batch</p>
+<p class="text-slate-300 text-xs">resource enrichment</p>
+</div>
+<div class="text-white text-xl font-bold">→</div>
+<div class="bg-emerald-950 rounded-xl p-4 border border-emerald-700 text-center w-48">
+<p class="text-emerald-400 font-semibold text-sm">Exporters</p>
+<p class="text-slate-300 text-xs mt-2">→ AWS X-Ray (trazas)</p>
+<p class="text-slate-300 text-xs">→ CloudWatch (logs + métricas)</p>
+<p class="text-slate-300 text-xs">→ Prometheus/AMP (métricas)</p>
+<p class="text-slate-300 text-xs">→ Dynatrace (todo)</p>
+</div>
+</div>
+
+<div class="bg-slate-800 rounded-xl p-4 border border-slate-600 mt-2">
+<p class="text-white text-sm font-semibold mb-2">💡 Clave: Dual/Triple Export</p>
+<p class="text-slate-300 text-xs">Un solo Collector envía la misma señal a múltiples destinos. Tu app no sabe ni le importa a dónde van los datos — solo habla OTLP con el Collector.</p>
+</div>
+
+---
+layout: default
+background: '#1e293b'
+---
+
+# Auto-instrumentación — Sin tocar código
+
+<div class="grid grid-cols-2 gap-6 mt-4 pb-12">
+<div>
+<p class="text-slate-300 text-sm mb-4">Con una sola annotation en el Deployment de Kubernetes, ADOT inyecta el Java Agent automáticamente.</p>
+<div class="bg-slate-900 rounded-xl p-4 font-mono text-xs border border-emerald-900 leading-relaxed">
+<span class="text-slate-500"># Solo agregar esta annotation:</span><br>
+<span class="text-emerald-400">annotations</span>:<br>
+&nbsp;&nbsp;<span class="text-amber-300">instrumentation.opentelemetry.io/inject-java</span>: <span class="text-emerald-400">"true"</span>
+</div>
+<div class="mt-4 bg-slate-800 rounded-lg p-4 border border-slate-700">
+<p class="text-white text-xs font-semibold mb-2">¿Qué hace el Agent automáticamente?</p>
+<div class="space-y-1 text-slate-300 text-xs">
+<p>✅ Instrumenta Spring Boot, WebFlux, JDBC, HTTP clients</p>
+<p>✅ Crea spans por cada operación</p>
+<p>✅ Propaga trace context (W3C) en headers</p>
+<p>✅ Enriquece logs con traceId y spanId</p>
+<p>✅ Exporta todo vía OTLP al Collector</p>
+</div>
+</div>
+</div>
+<div>
+<div class="bg-slate-800 rounded-xl p-5 border border-orange-700">
+<p class="text-orange-400 text-xs font-semibold uppercase mb-3">Propagación de contexto</p>
+<div class="bg-slate-900 rounded-lg p-3 font-mono text-xs leading-relaxed">
+<span class="text-slate-300">Request Header:</span><br>
+<span class="text-emerald-400">traceparent</span>: 00-<span class="text-amber-300">4bf92f35...</span>-<span class="text-blue-400">00f067aa...</span>-01<br><br>
+<span class="text-slate-500">version-traceId-spanId-flags</span>
+</div>
+<p class="text-slate-300 text-xs mt-3">Cada servicio recibe el contexto y crea child spans. La traza completa se reconstruye automáticamente.</p>
+</div>
+<div class="mt-4 bg-slate-800 rounded-xl p-4 border border-slate-600">
+<p class="text-white text-xs font-semibold mb-2">Muestreo inteligente (Tail-based)</p>
+<div class="space-y-1 text-slate-300 text-xs">
+<p>→ 100% de trazas con errores</p>
+<p>→ 100% de trazas lentas (> p95)</p>
+<p>→ 10% de trazas normales</p>
+</div>
+<p class="text-slate-400 text-xs mt-2">Reduce costos sin perder visibilidad de problemas.</p>
+</div>
+</div>
+</div>
+
+---
+layout: default
+background: '#1e293b'
+---
+
+# Arquitectura real — EKS + ADOT + Grafana
+
+<div class="mt-4 flex items-center justify-center gap-3">
+<div class="bg-slate-800 rounded-xl p-3 border border-slate-600 text-center w-32">
+<div class="text-2xl mb-1">☸️</div>
+<p class="text-white font-semibold text-xs">EKS Pods</p>
+<p class="text-slate-400 text-xs">Java Agent</p>
+</div>
+<div class="text-white text-lg font-bold">→</div>
+<div class="bg-slate-800 rounded-xl p-3 border border-cyan-700 text-center w-36">
+<div class="text-2xl mb-1">📡</div>
+<p class="text-cyan-400 font-semibold text-xs">ADOT Collector</p>
+<p class="text-slate-400 text-xs">DaemonSet</p>
+</div>
+<div class="text-white text-lg font-bold">→</div>
+<div class="space-y-2">
+<div class="bg-orange-950 rounded-lg p-2 border border-orange-700 text-center w-36">
+<p class="text-orange-400 text-xs font-semibold">X-Ray</p>
+</div>
+<div class="bg-purple-950 rounded-lg p-2 border border-purple-700 text-center w-36">
+<p class="text-purple-400 text-xs font-semibold">CloudWatch</p>
+</div>
+<div class="bg-emerald-950 rounded-lg p-2 border border-emerald-700 text-center w-36">
+<p class="text-emerald-400 text-xs font-semibold">AMP (Prometheus)</p>
+</div>
+</div>
+<div class="text-white text-lg font-bold">→</div>
+<div class="bg-slate-800 rounded-xl p-3 border border-amber-600 text-center w-36">
+<div class="text-2xl mb-1">📊</div>
+<p class="text-amber-400 font-semibold text-xs">Grafana</p>
+<p class="text-slate-400 text-xs">Dashboards</p>
+</div>
+</div>
+
+<div class="grid grid-cols-3 gap-4 mt-6 pb-12">
+<div class="bg-slate-800 rounded-lg p-4 border border-slate-700">
+<p class="text-cyan-400 text-xs font-semibold mb-2">ADOT como DaemonSet</p>
+<p class="text-slate-300 text-xs">1 pod por nodo. Recibe telemetría de todos los pods del nodo vía hostPort :4317. Escala automáticamente con el cluster.</p>
+</div>
+<div class="bg-slate-800 rounded-lg p-4 border border-slate-700">
+<p class="text-emerald-400 text-xs font-semibold mb-2">Amazon Managed Prometheus</p>
+<p class="text-slate-300 text-xs">Almacena métricas en formato Prometheus. Sin servidores que gestionar. Acceso via VPC Endpoint (privado).</p>
+</div>
+<div class="bg-slate-800 rounded-lg p-4 border border-slate-700">
+<p class="text-amber-400 text-xs font-semibold mb-2">Amazon Managed Grafana</p>
+<p class="text-slate-300 text-xs">Dashboards enterprise. Auth via SSO. Datasources: Prometheus, CloudWatch, X-Ray. ~$9/usuario/mes.</p>
+</div>
+</div>
+
+---
+layout: center
+background: '#1e293b'
+---
+
+# Bloque 6 — SLOs y Error Budget
+
+<div class="mt-6 text-slate-300 text-lg">Medir la salud del servicio con objetivos claros</div>
+<div class="mt-2 text-slate-500 text-sm">De "el sistema está arriba" a "el sistema cumple sus promesas"</div>
+
+---
+layout: default
+background: '#1e293b'
+---
+
+# SLI → SLO → Error Budget
+
+<div class="grid grid-cols-3 gap-5 mt-6 pb-12">
+<div class="bg-slate-800 rounded-xl p-5 border border-blue-700">
+<p class="text-blue-400 font-semibold text-sm mb-2">SLI</p>
+<p class="text-slate-500 text-xs uppercase mb-2">Service Level Indicator</p>
+<p class="text-slate-300 text-sm">La métrica que mides</p>
+<div class="mt-3 bg-slate-900 rounded-lg p-3 border border-slate-700">
+<p class="text-blue-300 text-xs font-mono">% requests con latencia &lt; 300ms</p>
+</div>
+</div>
+<div class="bg-slate-800 rounded-xl p-5 border border-emerald-700">
+<p class="text-emerald-400 font-semibold text-sm mb-2">SLO</p>
+<p class="text-slate-500 text-xs uppercase mb-2">Service Level Objective</p>
+<p class="text-slate-300 text-sm">El objetivo que te pones</p>
+<div class="mt-3 bg-slate-900 rounded-lg p-3 border border-slate-700">
+<p class="text-emerald-300 text-xs font-mono">95% de requests &lt; 300ms en 28 días</p>
+</div>
+</div>
+<div class="bg-slate-800 rounded-xl p-5 border border-amber-700">
+<p class="text-amber-400 font-semibold text-sm mb-2">Error Budget</p>
+<p class="text-slate-500 text-xs uppercase mb-2">Margen de error permitido</p>
+<p class="text-slate-300 text-sm">Cuánto puedes fallar</p>
+<div class="mt-3 bg-slate-900 rounded-lg p-3 border border-slate-700">
+<p class="text-amber-300 text-xs font-mono">5% = ~36h de degradación/mes</p>
+</div>
+</div>
+</div>
+
+<div class="bg-slate-800 rounded-xl p-4 border border-slate-600">
+<p class="text-white text-sm font-semibold mb-2">¿Para qué sirve el Error Budget?</p>
+<div class="grid grid-cols-4 gap-3 text-xs">
+<div class="text-center">
+<p class="text-emerald-400 font-semibold">&gt; 50%</p>
+<p class="text-slate-300">Innovar</p>
+</div>
+<div class="text-center">
+<p class="text-amber-400 font-semibold">20-50%</p>
+<p class="text-slate-300">Precaución</p>
+</div>
+<div class="text-center">
+<p class="text-red-400 font-semibold">&lt; 20%</p>
+<p class="text-slate-300">Estabilizar</p>
+</div>
+<div class="text-center">
+<p class="text-red-600 font-semibold">0%</p>
+<p class="text-slate-300">Freeze total</p>
+</div>
+</div>
+</div>
+
+---
+layout: default
+background: '#1e293b'
+---
+
+# Golden Signals — Las 4 métricas clave
+
+<div class="grid grid-cols-4 gap-4 mt-6 pb-12">
+<div class="bg-slate-800 rounded-xl p-4 border border-emerald-700 text-center">
+<div class="text-3xl mb-2">⏱</div>
+<p class="text-emerald-400 font-semibold text-sm">Latencia</p>
+<p class="text-slate-300 text-xs mt-2">¿Cuánto tarda?</p>
+<p class="text-slate-400 text-xs mt-1">p50, p95, p99</p>
+</div>
+<div class="bg-slate-800 rounded-xl p-4 border border-blue-700 text-center">
+<div class="text-3xl mb-2">📈</div>
+<p class="text-blue-400 font-semibold text-sm">Tráfico</p>
+<p class="text-slate-300 text-xs mt-2">¿Cuánta demanda?</p>
+<p class="text-slate-400 text-xs mt-1">req/s, TPS</p>
+</div>
+<div class="bg-slate-800 rounded-xl p-4 border border-red-700 text-center">
+<div class="text-3xl mb-2">❌</div>
+<p class="text-red-400 font-semibold text-sm">Errores</p>
+<p class="text-slate-300 text-xs mt-2">¿Cuánto falla?</p>
+<p class="text-slate-400 text-xs mt-1">error rate %</p>
+</div>
+<div class="bg-slate-800 rounded-xl p-4 border border-amber-700 text-center">
+<div class="text-3xl mb-2">🔥</div>
+<p class="text-amber-400 font-semibold text-sm">Saturación</p>
+<p class="text-slate-300 text-xs mt-2">¿Cuánto queda?</p>
+<p class="text-slate-400 text-xs mt-1">CPU, mem, conns</p>
+</div>
+</div>
+
+<div class="bg-emerald-950 rounded-xl p-4 border border-emerald-700">
+<p class="text-emerald-300 text-sm font-semibold">💡 Alertas basadas en SLOs, no en umbrales estáticos</p>
+<div class="grid grid-cols-2 gap-4 mt-2 text-xs">
+<div>
+<p class="text-red-400">❌ Mal: "CPU > 90% durante 5 min"</p>
+</div>
+<div>
+<p class="text-emerald-400">✅ Bien: "Error budget consumido > 10% en 1 hora"</p>
+</div>
+</div>
+</div>
+
+---
+layout: center
+background: '#1e293b'
+---
+
+# Cierre — El camino completo
+
+<div class="mt-6 space-y-4 max-w-2xl mx-auto">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-emerald-900 border border-emerald-600 flex items-center justify-center text-emerald-400 font-bold text-sm">1</div>
+<p class="text-slate-300 text-sm">Entender los 3 pilares: Métricas, Logs, Trazas</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-emerald-900 border border-emerald-600 flex items-center justify-center text-emerald-400 font-bold text-sm">2</div>
+<p class="text-slate-300 text-sm">Implementar con servicios AWS nativos (CloudWatch, X-Ray)</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-emerald-900 border border-emerald-600 flex items-center justify-center text-emerald-400 font-bold text-sm">3</div>
+<p class="text-slate-300 text-sm">Evolucionar a OpenTelemetry + ADOT (estándar abierto)</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-emerald-900 border border-emerald-600 flex items-center justify-center text-emerald-400 font-bold text-sm">4</div>
+<p class="text-slate-300 text-sm">Visualizar con Grafana + AMP (dashboards enterprise)</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-emerald-900 border border-emerald-600 flex items-center justify-center text-emerald-400 font-bold text-sm">5</div>
+<p class="text-slate-300 text-sm">Medir con SLOs y Error Budget (cultura de confiabilidad)</p>
+</div>
+</div>
+
+<div class="mt-8 text-slate-500 text-sm">Julian Isaza · Observabilidad en AWS</div>
